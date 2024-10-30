@@ -1,5 +1,4 @@
 function displayVerse(response) {
-  console.log("verse generated");
   new Typewriter("#verse", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,10 +21,6 @@ function generateVerse(event) {
   let verseElement = document.querySelector("#verse");
   verseElement.classList.remove("hidden");
   verseElement.innerHTML = `<div class="generating">⌛Generating your request for ${instructionsInput.value}</div>`;
-
-  console.log("Generating verse");
-  console.log(`Prompt:${prompt}`);
-  console.log(`Context:${context}`);
 
   axios.get(apiUrl).then(displayVerse);
   //display the generated poem
