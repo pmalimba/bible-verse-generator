@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>index.html</title>
 </head>
 
@@ -15,16 +16,13 @@
             <h1>AI Bible Verse Generator</h1>
         </header>
         <main>
-            <form>
+            <form id="verse-generator-form">
                 <input type="text" placeholder="Enter a bible verse" autofocus required auto complete="off"
                     class="instructions" />
                 <input type="submit" class="submit-button" />
             </form>
-            <div class="verse">
-                Be still
-                <br />
-                And know that I'm God
-            </div>
+            <div class="verse" id="verse"></div>
+
         </main>
 
         <script src="src/index.js"></script>
