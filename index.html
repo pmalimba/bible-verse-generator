@@ -17,12 +17,16 @@
             <h1>AI Bible Verse Generator</h1>
         </header>
         <main>
-            <form id="verse-generator-form">
-                <input type="text" placeholder="Enter a bible verse" autofocus required auto complete="off"
-                    class="instructions" id="user-instructions" />
-                <input type="submit" class="submit-button" />
-            </form>
-            <div class="verse" id="verse"></div>
+            <div class="form-container">
+                <form id="verse-generator-form">
+                    <input type="text" placeholder="Enter a bible verse or a topic" autofocus required auto
+                        complete="off" class="instructions" id="user-instructions" />
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">i.e: Jesus, marriage, Psalm 91, Jehovah Jireh, names of God, etc..</div>
+            </div>
+
+            <div class="verse hidden" id="verse"></div>
 
         </main>
 

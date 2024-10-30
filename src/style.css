@@ -17,14 +17,21 @@ h1 {
   color: purple;
   margin: 0;
 }
-
-form {
-  padding: 30px;
+.form-container {
   background-color: rgb(97, 137, 246);
-  border-radius: 10px;
-  display: flex;
-  box-shadow: 0 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
+form {
+  display: flex;
+}
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
 }
 .instructions {
   padding: 16px;
@@ -58,8 +65,26 @@ header {
   box-shadow: 0 20px 60px rgba(65, 50, 100, 0.03);
   border-radius: 10px;
 }
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+.generating {
+  animation: blink 1s steps (5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

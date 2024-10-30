@@ -19,6 +19,10 @@ function generateVerse(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=51035d71b84ac5cet75eof3fb55a84d0`;
   //make the call to the PI using axios
 
+  let verseElement = document.querySelector("#verse");
+  verseElement.classList.remove("hidden");
+  verseElement.innerHTML = `<div class="generating">Generating your request for ${instructionsInput.value}</div>`;
+
   console.log("Generating verse");
   console.log(`Prompt:${prompt}`);
   console.log(`Context:${context}`);
