@@ -21,7 +21,7 @@ function generateVerse(event) {
 
   let verseElement = document.querySelector("#verse");
   verseElement.classList.remove("hidden");
-  verseElement.innerHTML = `<div class="generating">Generating your request for ${instructionsInput.value}</div>`;
+  verseElement.innerHTML = `<div class="generating">⌛Generating your request for ${instructionsInput.value}</div>`;
 
   console.log("Generating verse");
   console.log(`Prompt:${prompt}`);
